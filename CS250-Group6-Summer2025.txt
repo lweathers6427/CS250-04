@@ -1,0 +1,521 @@
+Movie theater ticketing
+
+
+Software Requirements Specification
+
+Version <2.0>
+
+7.22.2025
+
+Group #6
+Daniel Wen,
+Lawrence Weathers,
+Yangchen Lee
+
+
+Prepared for
+CS 250- Introduction to Software Systems
+Instructor: Gus Hanna, Ph.D.
+Summer 2025
+Revision History
+
+Date
+Description
+Author
+Comments
+<date>
+<Version 1>
+<Your Name>
+<First Revision>
+7/15/2025
+<Version 1>
+Group 6
+Requirements Specification
+7/22/2025
+<Version 2>
+Group 6
+SDS addition pg 7
+
+
+
+
+
+Document Approval
+
+The following Software Requirements Specification has been accepted and approved by the following:
+Signature
+Printed Name
+Title
+Date
+
+Group 6 CS250
+Software Eng.
+7/22/2025
+
+Dr. Gus Hanna
+Instructor, CS 250
+
+
+
+
+
+Table of Contents
+
+Revision History ii
+Document Approval ii
+1. Introduction 1
+1.1 Purpose 1
+1.2 Scope 1
+1.3 Definitions, Acronyms, and Abbreviations 1
+1.4 References 1
+1.5 Overview 1
+2. General Description 2
+2.1 Product Perspective 2
+2.2 Product Functions 2
+2.3 User Characteristics 2
+2.4 General Constraints 2
+2.5 Assumptions and Dependencies 2
+3. Specific Requirements 2
+3.1 External Interface Requirements 3
+3.1.1 User Interfaces 3
+3.1.2 Hardware Interfaces 3
+3.1.3 Software Interfaces 3
+3.1.4 Communications Interfaces 3
+3.2 Functional Requirements 3
+3.2.1 <Payment> 3
+3.2.2 <Login> 3
+3.3 Use Cases 3
+3.3.1 Use Case #1 3
+3.3.2 Use Case #2 3
+3.4 Classes / Objects 3
+3.4.1 <Class / Object #1> 3
+3.4.2 <Class / Object #2> 3
+3.5 Non-Functional Requirements 4
+3.5.1 Performance 4
+3.5.2 Reliability 4
+3.5.3 Availability 4
+3.5.4 Security 4
+3.5.5 Maintainability 4
+3.5.6 Portability 4
+3.6 Inverse Requirements 4
+3.7 Design Constraints 4
+3.8 Logical Database Requirements 4
+3.9 Other Requirements 4
+4. Analysis Models 4
+4.1 Sequence Diagrams 5
+4.3 Data Flow Diagrams (DFD) 5
+4.2 State-Transition Diagrams (STD) 5
+5. Change Management Process 5
+A. Appendices 5
+A.1 Appendix 1 5
+A.2 Appendix 2 5
+
+
+1. Introduction
+With the evolution of the movie theater industry, a robust ticketing system needs to be created to better serve customer needs. This document acts as a blueprint to guide the developer on how to create a movie theater ticketing system that will include assistive features and effective functionalities to simplify the ticketing process for today’s consumer. 
+1.1 Purpose
+The purpose of this document is to create an online system to facilitate the sale of movie tickets with the customer’s satisfaction in mind. This system is intended to enable users to search movie schedules, select seats, and purchase tickets via browsers with ease. The document provides the outline of the goals that should be met in the final product.
+1.2 Scope
+The scope of the system includes the ability for users to browse movies available at their selected theater, see the number of tickets and seating available, and the price of a ticket. The system holds a database containing movie schedules and availability for all theaters. Users can see movie reviews and ratings, purchase discounted tickets, and see live updates on ticket availability. Feedback can be submitted by the users at the end of each purchase. Additionally, an administrator mode will be provided for theater managers to override the system in case of any error.
+
+1.3 Definitions, Acronyms, and Abbreviations
+
+User
+An individual who uses the website to browse or buy movie tickets
+Administrator / Admin
+A manager who has access to override the system and handle errors
+UI 
+User Interface
+DB 
+Database
+Discounted tickets
+Tickets sold at a discounted price when certain condition is met
+Rating
+A score showing critics’ opinions on a movie
+Live Update
+Real-time statistics shown to the user
+
+1.4 References
+The references are:
+Marvel Electronics and Home Entertainment E-store project
+IEEE Recommended Practice for Software Requirements Specifications
+   Software Requirements Specification document with example
+1.5 Overview
+The following sections of this document provide a general description and the requirements of the software. Section 2 discusses the functions of the product, characteristics of the users, and the constraints when developing the project. Section 3 describes detailed system functional requirements and the external interface requirements.
+2. General Description
+This section will discuss the general factors that are to be implemented into the Movie theater ticketing system. 
+2.1 Product Perspective
+The Movie theater ticketing system provides a user-friendly interface that allows users to search for and purchase tickets on the website. It should streamline the user booking experience into an intuitive experience and catalog their records into an efficient database alongside ticket availability, film schedules, and theatre statistics. 
+2.2 Product Functions
+The system provides a search feature for movie schedules, displays seat maps, and ticket pricing. Remaining tickets will be adjusted and displayed to the users according to real-time availability updates. Users can select from two seating options, regular or premium, and the pricing shown would be adjusted accordingly, with the choice to purchase a discounted ticket if certain conditions are met. They can also read movie reviews and ratings before making a purchase. Emojis like smiley, neutral, or angry faces will be shown to the users at the end for them to choose from, and collected as the user’s feedback as a simple survey. An administrator mode is provided for the manager to make changes to movie schedules for each theater and resolve errors if a customer encounters an error during a purchase.
+2.3 User Characteristics
+Users of this system will primarily be customers who are able to view movie screening times, available seats, create ticket reservations, and eventually make purchases according to selected parameters. The user should be able to do the above through the theater’s website, both on a mobile device and a PC, and have the option to store their data with their own account or to operate as a guest. The system also supports theater staff and privileged administrators with the ability to manage movie schedules, oversee purchases/reservations, general troubleshooting, and system adjustments. 
+2.4 General Constraints
+Constraints include an intuitive user interface available on modern browsers such as Chrome or Edge, with customer data being protected by meeting webpage security standards. Showtimes, ticket availability, and film statistics should all be shown to the user live with a slight delay, whereas the background database is to be updated in real time to avoid accidents such as double-booking and fraud such as botting.
+
+2.5 Assumptions and Dependencies
+It is assumed that users will have a stable internet connection and access to a web browser.
+Movie schedules and seat availability are assumed to be updated by the theater staff with admin mode regularly. Admin users are assumed to have the necessary knowledge to perform a system override readily for a wide range of potential circumstances. The system depends on external APIs to process ticket payments and to display certain visual elements such as reviews. 
+
+3. Specific Requirements
+The following section is designed to provide a comprehensive overview of developing the Movie theater ticketing system. Listed below are the functionalities and features that will be implemented along with use cases.
+
+3.1 External Interface Requirements
+3.1.1 User Interfaces
+Input Fields
+Create user login
+Continue as a “Guest”
+Search bar
+Reserve option
+Purchase option
+User survey option
+Support ticket submission
+Drop-Down lists
+List of Movies being shown
+List of theater locations
+Filter options
+Genre (i.e. Romantic, Comedy, Action)
+Ratings (Y, PG, PG-13, R)
+Length of Movie
+Theater type (3-D, iMax, Standard)
+Ability to browse both current and future screening times given calendar dates
+Progress updates (where you are in the ticket purchasing process)
+Real-time visual output of available seating based on selections
+
+3.1.2 Hardware Interfaces
+Laptop, desktop, tablet, cell phone.
+The ability to connect via the internet.
+3.1.3 Software Interfaces
+The Movie theater ticketing system will support multiple web browsers.  If the user is using an unsupported browser, they will receive a pop-up notification with a list of supported browsers and versions.  Examples of supported browsers are below, with example version numbers:
+Google Chrome (ex. 25.9 and up)
+Firefox (ex. 25.10 and up)
+Safari (ex. 16.6 and up)
+Microsoft Edge (25.1 and up)
+Brave (10.5 and up)
+3.1.4 Communications Interfaces
+The user will be able to contact the theater by submitting support tickets and emails, which are then stored in the database, where theater staff are immediately notified. Other contact methods, such as social media and help phone, are not handled by this system.
+3.2 Functional Requirements
+This section covers the functionality of the Movie theater ticketing system.  It covers functions that are necessary for the successful development of the system, including small details such as information retention and error handling when going back to previous pages.
+3.2.1 Payment
+Should be able to process payments using Credit Cards, Debit Cards, PayPal, gift cards, Venmo, Zelle, or reward points.
+It should also offer an option to pay at the theater during ticket pickup.
+If there is an error during the payment process, the user will receive an error message.  They will be given a chance to purchase again, or the purchase will fail, and the user will not be charged.
+Requested refunds are either returned to the user's payment method or via theater credit.
+3.2.2 Login
+Users can create an account to buy tickets. This will allow them to save payment information, earn rewards from purchases.
+There is an option to proceed as a guest.
+If a user enters incorrect login information, they will see a message “incorrect email or password”.
+Ability to select “Forgot Password” or “Forgot Login”.
+
+3.2.3 Ticketing
+After the desired number of tickets is selected, the user is taken to the seat selection screen.
+Users are given 10 minutes to complete the purchase after selecting seats.
+During that 10-minute period, seats are shown as filled, so that seats cannot be purchased while the customer is completing the purchase.
+Options for discounted tickets are shown to the users, including student, military, and senior discounts.
+
+3.2.4 Administrator mode
+The system allows theater managers to add, remove, and update movie listings.
+Managers can override the system at any phase of a customer’s purchase to handle errors.
+Customers are restricted from accessing administrator mode.
+3.3 Use Cases
+3.3.1 Use Case #1 Customer purchasing tickets
+1. Users browse and choose a movie.
+2. The system shows movie schedule, ticket price, and seating options.
+3. Users choose ticket discount options and, if possible, seating.
+4. Users proceed to payment.
+5. System confirms purchase.
+6. Ticket availability updated.
+3.3.2 Use Case #2 Submit feedback
+1. The system prompts the user to leave feedback
+2. The user chooses from three separate emojis according to their level of satisfaction
+3. The system stores the feedback
+3.3.3 Use Case #3 Admin override system
+1. Admin is notified of a showtime input error
+2. Admin accesses the admin panel
+3. Admin chooses a movie showtime
+4. Admin manually removes the movie from the schedule
+5. System updates the database
+6. Interfaces update to reflect changes
+3.4 Classes / Objects
+3.4.1 <Ticket Class>
+3.4.1.1 Attributes
+ticketID: Integer, unique ID for the ticket
+purchaseLimit: Integer, 20 per purchase
+userID: Integer, unique ID for each user
+seatNumber: String, user-selected seat
+Showtime: Integer, scheduled movie showtime
+Price: Float, ticket price
+holdStartTime: Timestamp, ticket purchase timer
+holdDuration: Integer, 10 minutes timer
+isExpired: Boolean, returns true if a user has exceeded the purchase time limit
+3.4.1.2 Functions
+purchase(): Allows the user to choose a payment method and purchase tickets
+checkExpiration(): Check if the reserved session has ended
+holdSeat(): Temporary hold tickets during a session
+releaseSeat(): Unhold tickets if a user’s session has expired
+updateAvailability(): Update ticket availability after a successful purchase
+changeLanguage(): Allows the user to change language into Spanish, Swedish, or English
+cancel(): End purchase
+3.4.2 <Admin Class>
+3.4.2.1 Attributes
+adminID: Integer, unique ID for an admin user
+username: String, login name
+3.4.2.2 Functions
+login(username): Boolean, authentication for an admin user
+overrideSystem(): Boolean, allow staff to handle errors
+adjustShowtime(): Boolean, allow staff to change movie schedule
+3.5 Non-Functional Requirements
+3.5.1 Performance
+95% of page loads and user actions should be complete within 2 seconds under normal conditions
+The system should support up to 1000 concurrent users
+3.5.2 Reliability
+The system should recover to the normal state within 5 minutes with auto reset or admin override
+The UI should be easy for both the users and admins to understand and operate without additional assistance
+3.5.3 Availability
+The monitoring system would notify System Administrators of the ticketing system being offline.
+Monthly maintenance on the system would ensure it is running at optimum levels (patching, purging of stale data)
+3.5.4 Security
+Use MFA for login for registered users.
+Monitoring of purchases ensures bots are not buying tickets for the resell market.
+Ensure encryption of data
+Require employees to use specific authentication methods (i.e MFA, badges, hardware tokens)
+Bot mitigation techniques, such as CAPTCHA or reCAPTCHA, shall be implemented during ticket purchasing to ensure the actions are performed by human users
+3.5.5 Maintainability
+Schedule weekly downtime for maintenance. Would be scheduled during low traffic hours (12am-8am) with no more than 2 hours of downtime
+Implement a monitoring system that would notify of ticketing systems being down or services being in a “Failed” state.
+Potential creation of a failover system in the event the main system goes down, traffic can be moved to the failover system to ensure minimal downtime.
+3.5.6 Portability
+The system shall be usable on all modern browsers (Chrome, Edge, Firefox, etc.)
+The UI must adapt to both desktop and mobile devices
+3.6 Inverse Requirements
+State any *useful* inverse requirements.
+3.7 Design Constraints
+Specify design constrains imposed by other standards, company policies, hardware limitation, etc. that will impact this software project.
+3.8 Logical Database Requirements
+Will a database be used?  If so, what logical requirements exist for data formats, storage capabilities, data retention, data integrity, etc.
+3.9 Other Requirements
+Catchall section for any additional requirements.
+Starting point for Assignment #2 
+4. System Description
+4.1 Brief overview of ticketing system
+The following sections detail the Software Design Specifications for the Movie theater ticketing system.  This will offer an outline of the architectural design of the project before implementation.  This will provide a view of the flow of the ticketing system, starting from the user logging in, to completing the purchase.
+
+5. Software Architecture Overview
+
+Below is a diagram of the system architecture.  This serves as an overview for the developer on how the system should work. The diagram shows the flow from the user connecting to the ticketing system via their device.  The data goes through the load balancer and connects to the web servers.  The web servers then take the input from the user to search the database for the movie, and send the information back through the web servers to the user.
+
+The access for employees is similar but instead of accessing the system through a personal device, the employees would be using computers at the theater or office.
+
+System administrators will access the Web Servers as well as the SQL DB via system administrator PC which they will be the only users who have access to.
+
+5.1 Architectural diagram
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+5.2 UML Diagram
+
+
+6. Description of Classes, Objects & Attributes
+
+Below are descriptions of the classes, objects, and attributes that will be used for the development of the Movie theater ticketing system. The objects and respective functions described will reside within the SQL database.  
+
+The database itself will use SQL and will be managed by the System Administrators.  
+
+6.1 Movie Showtime
+Represents scheduled screening time of a movie
+Stores when a show occurs (startTime)
+Tracks ticket and seating info (price, seatAvailable, seatMap)
+6.1.1 Attributes
+(int) showtimeID: Sequential identifier for movie showtime, starting at 1
+(DateTime) startTime: Exact time stamp for movie showtime.
+(int) price: Non-discounted price for ticket at that time.
+(int) seatAvailable: Holds the number of seats available left for a specific showtime. Used as the condition of isAvailable method.
+(Map<string, string>) seatMap: A map that holds the status and the location of a seat. A string is used for status (available, reserved or non-reserved). The other string holds the seat number that indicates the row and column location of a seat (e.g. “M17”).
+6.1.2 Methods
+(bool) isAvailable(): Return false when seatAvailable == 0
+(int) getShowtimeID(): Return showtime ID
+6.2 Movie
+Holds movie information
+Stores a list of reviews for the film
+Stores a list of showtime set by the administrators
+6.2.1 Attributes
+(int) movieID: Unique, auto-incremented ID for each movie
+(string) movieName: Name of the movie show to users
+(List<string>) reviews: List of critics reviews
+(List<Showtime>) startTime: List of movie showtime
+6.3 Screen
+Models an auditorium in a theater
+Identify the auditorium (screenID) and capacity (seatNum)
+References the movie that is currently showing (movie)
+6.3.1 Attributes
+(int) screenID: Unique ID of the auditorium
+(int) seatNum: Number of capacity for an auditorium
+(Movie) movie: Movie object 
+6.4 Theater
+Represent the physical theater location
+Holds cinema info (theaterID, theaterName, theaterAddress)
+Contain one or more Screen objects
+Managed by administrator
+6.4.1 Attributes
+(int) theaterID: Unique, auto-incremented ID for each theater
+(string) theaterName: Name of a theater
+(string) theaterAddress: Address location of a theater
+(List<Screen>) screen: List of screens in the theater
+6.5 Ticket
+Records one purchased seat at a specific time
+Combine movieID and showtimeID for a customer’s purchase (ticketID)
+Identify each ticket (ticketType)
+Checked or removed by Customer.cancelTicket()
+6.5.1 Attributes
+(int) ticketID: Unique ID for each tickets
+(int) showtimeID: ID that matches movie and showtime ID combined
+(string) ticketType: Ticket type purchased (Regular, Deluxe)
+(string) seatNumber: Status of seating or seat number (e.g. “A10”, “un-reserved”)
+6.5.2 Methods
+purchaseTicket(): Calls purchase service
+6.6 PurchaseService
+Support step for processing a customer’s reservation into a paid ticket
+Reserve a seat in a showtime (reserveSeat())
+Handle payment selection and processing (selectPaymentMethod(), confirmPurchase())
+Calls Showtime.isAvailable() and update seatAvailable
+Uses a timer to limit reservation time for a user’s purchase
+6.6.1 Attributes
+(DateTime) reservationStartTime: The time when the seat reservation began
+(int) reservationTimeOut: Time limit (minutes) to complete a purchase
+6.6.2 Methods
+reserveSeat(): Decrements available seats for a given showtime
+selectDiscount(): Show selections for regular and discounted prices (regular, students, military, senior, etc.)
+selectPaymentMethod(): Prompt user to select payment methods (credit card, gift card, etc.)
+confirmPurchase(): Finalize ticket purchase. Returns true if the payment is successful and the timer has not expired; return false otherwise.
+startTimer(): Starts countdown timer when a seat is reserved
+isTimerExpired(): Checks if reservationTimeOut number of minutes has passed; cancel purchase when true
+6.7 Administrators
+Special user with rights to manage movie schedules and handle customer errors
+Override system settings (overrideSystem())
+Add or remove movies (addMovie(), removeMovie())
+Change showtimes (rescheduleShowtime())
+6.7.1 Methods
+overrideSystem(): Allow admins to take over the system for error handling or general support on behalf of a customer
+rescheduleShowtime(m: Movie, s Showtime, newTime: DateTime): Allows admins to change schedules to unpublished movie showtime
+addMovie(m: Movie): Allows admins to add movie to a screen
+removeMovie(m: Movie): Allows admins to remove unpublished movie showtime
+6.8 Customer
+End user that browses, selects, and purchase tickets
+Create and manage their account (register())
+Browse available movies and showtimes (browse(), selectMovie(), selectShowtime())
+Maintain payment info and track tickets held (creditCardInfo, ticketLimit, ticketsHeld)
+Uses purchaseService for booking
+6.8.1 Attributes
+(string) userEmail: Unique email the customer uses to log in
+(string) creditCardInfo: Credit card info for payments
+(int) ticketLimit: Maximum number of unexpired tickets each customer can hold
+(int) ticketsHeld: Current number of a customer’s unexpired, purchased tickets
+6.8.2 Method
+register(): Creates new customer account; prompt invalid registration if email is already in use
+browse(): Show movies currently available for booking; return empty list if none
+selectMovie(movie: string): Choose a movie by clicking on the movie shown to the customer
+selectShowtime(showtime: DateTime): Choose an available showtime by clicking; showtime will not be shown if availability == 0
+cancelTicket(): Cancel the ticket selected; proceed to payment if otherwise
+6.9 User
+Base class for everyone who logs into the system (Customer and Administrator)
+Stores authentication data (userID, userName, password)
+Verify credentials (verifyLogin())
+Extended by Customer and Administrator
+6.9.1 Attributes
+(int) userID: System-generated unique user identifier
+(int) password: User entered code for authentication
+(string) userName: Display name set by the user
+6.9.2 Methods
+verifyLogin(): Check credentials given by the user against the record; prompt a fail message for invalid email and password are given
+
+7.  Development Plan and Timeline
+
+7.1 Begin Development
+Consult with the design team to create a diagram showing the flow of the system.  
+Once design is approved, development team will begin working on the creation of the system
+After the creation of each module, the QA team will test functionality between modules to confirm functionality.
+Consult with System Administrators for security patching. Also, confirm with System Administrators that all proper security practices have been implemented to protect the customer as well as the theater.
+Discuss hiring customer service representatives to be available to assist users with issues.
+
+7.1.2 Testing
+Test login functionality
+User name/password
+Guest Login
+Forgot user name or Forgot password.
+Create new account
+Test search functionality
+Confirm can search Movie DB
+Confirm filters functionality
+Can search multiple theaters
+Can search different days
+Shopping Cart
+Test user can make purchase using different payment methods (credit card, pay pal, zelle, venmo, etc)
+Test user can use rewards to make purchases
+Test user account is credited with reward points when making purchases
+Test user can request refund
+Security
+Confirm CAPTCHA or MFA works
+Confirm scheduling of updates during low peak hours (12am-5am)
+Confirm encryption of purchases
+System availability
+Stress testing, make sure the system can handle a high volume of requests.  
+Verify in the event that the main system goes down, the ticketing system fails over to the backup system to mitigate downtime.
+Nightly backups of system
+Disaster recovery plan in the event of unplanned outage
+Hot site on standby
+Ability to attach SQL DB to backup system
+
+7.1.3 User testing
+Invite small group of users to test out ticketing system
+Take feedback from user testing to make changes to the system.
+
+7.1.4 Final release
+Create event for release of ticketing system
+Discounts for first 500 users to login
+
+7.2 Team member responsibilities
+Below is a list of who is responsible for what aspects of the development process for the Movie theater ticketing system
+
+7.2.1 UX/UI Team
+Take an architectural diagram and implement.
+Take user input from user testing and implement into final Movie theater ticketing system
+Creates/manages GUI for ticketing system
+
+7.2.2 Development team
+Develop code for the site.
+Create APIs for things like shopping carts, emails, etc.
+Implement user authentication.
+Collaborate with the UX/UI team to deliver and maintain the site.
+Implement proper security with the help of System Administrators (i.e MFA, CAPTCHA)
+Collaborate with System Administrators for patching and security updates to ensure the system is always running on latest versions.
+
+7.2.3 QA
+Test a new version before being released to the site.  Check for bugs, functionality that is failing, and report back to the development team to fix.
+
+7.2.4 Database team
+Create database to manage Movie theater ticketing infrastructure
+Ensure database updates are installed when available during low peak hours
+Perform weekly indexing of DB to ensure the database has no errors.
+7.2.5 Customer Service
+Work with customers having issues, front end support
+Escalate to the development team when issues with the site are found.
+
+
+
+
+
+
+
+
+
+
