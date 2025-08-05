@@ -1,0 +1,209 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.0.6 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36" version="28.0.6">
+  <diagram name="Page-1" id="keCYQJK2TOxoG9gc8rmm">
+    <mxGraphModel dx="786" dy="516" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="SUS-D7441Kwhzc1_D773-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="SUS-D7441Kwhzc1_D773-1" target="SUS-D7441Kwhzc1_D773-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SUS-D7441Kwhzc1_D773-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="SUS-D7441Kwhzc1_D773-1" target="SUS-D7441Kwhzc1_D773-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SUS-D7441Kwhzc1_D773-1" value="UserDB" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/databases.svg;" vertex="1" parent="1">
+          <mxGeometry x="14" y="72" width="109.18" height="107" as="geometry" />
+        </mxCell>
+        <mxCell id="SUS-D7441Kwhzc1_D773-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="SUS-D7441Kwhzc1_D773-4" target="SUS-D7441Kwhzc1_D773-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SUS-D7441Kwhzc1_D773-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="SUS-D7441Kwhzc1_D773-4" target="SUS-D7441Kwhzc1_D773-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SUS-D7441Kwhzc1_D773-4" value="Login&lt;div&gt;Page&lt;/div&gt;" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/home_page.svg;" vertex="1" parent="1">
+          <mxGeometry x="32" y="235" width="50" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="SUS-D7441Kwhzc1_D773-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="SUS-D7441Kwhzc1_D773-5" target="SUS-D7441Kwhzc1_D773-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SUS-D7441Kwhzc1_D773-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="SUS-D7441Kwhzc1_D773-5" target="SUS-D7441Kwhzc1_D773-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SUS-D7441Kwhzc1_D773-5" value="Customer&lt;div&gt;Page&lt;/div&gt;" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/home_page.svg;" vertex="1" parent="1">
+          <mxGeometry x="160" y="280" width="50" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="SUS-D7441Kwhzc1_D773-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="SUS-D7441Kwhzc1_D773-6" target="SUS-D7441Kwhzc1_D773-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SUS-D7441Kwhzc1_D773-30" value="Movie" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="SUS-D7441Kwhzc1_D773-29">
+          <mxGeometry x="0.1556" y="-3" relative="1" as="geometry">
+            <mxPoint x="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SUS-D7441Kwhzc1_D773-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="SUS-D7441Kwhzc1_D773-6" target="SUS-D7441Kwhzc1_D773-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SUS-D7441Kwhzc1_D773-42" value="Showtime" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="SUS-D7441Kwhzc1_D773-41">
+          <mxGeometry x="-0.0891" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SUS-D7441Kwhzc1_D773-6" value="Movie&lt;div&gt;Selection&lt;/div&gt;" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/home_page.svg;" vertex="1" parent="1">
+          <mxGeometry x="299" y="280" width="50" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="SUS-D7441Kwhzc1_D773-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="SUS-D7441Kwhzc1_D773-7" target="SUS-D7441Kwhzc1_D773-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SUS-D7441Kwhzc1_D773-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="SUS-D7441Kwhzc1_D773-7" target="SUS-D7441Kwhzc1_D773-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SUS-D7441Kwhzc1_D773-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="SUS-D7441Kwhzc1_D773-7" target="SUS-D7441Kwhzc1_D773-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SUS-D7441Kwhzc1_D773-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="SUS-D7441Kwhzc1_D773-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="565.3333129882812" y="432.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SUS-D7441Kwhzc1_D773-7" value="Admin Page" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/home_page.svg;" vertex="1" parent="1">
+          <mxGeometry x="299" y="410" width="50" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="SUS-D7441Kwhzc1_D773-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="SUS-D7441Kwhzc1_D773-8" target="SUS-D7441Kwhzc1_D773-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SUS-D7441Kwhzc1_D773-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="SUS-D7441Kwhzc1_D773-8" target="SUS-D7441Kwhzc1_D773-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SUS-D7441Kwhzc1_D773-8" value="TheaterDB" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/databases.svg;" vertex="1" parent="1">
+          <mxGeometry x="113" y="501" width="97" height="95.06" as="geometry" />
+        </mxCell>
+        <mxCell id="SUS-D7441Kwhzc1_D773-10" value="Time Selection" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/home_page.svg;" vertex="1" parent="1">
+          <mxGeometry x="450" y="280" width="50" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="SUS-D7441Kwhzc1_D773-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="SUS-D7441Kwhzc1_D773-11" target="SUS-D7441Kwhzc1_D773-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SUS-D7441Kwhzc1_D773-47" value="Payment" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="SUS-D7441Kwhzc1_D773-46">
+          <mxGeometry x="0.0222" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SUS-D7441Kwhzc1_D773-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="SUS-D7441Kwhzc1_D773-11" target="SUS-D7441Kwhzc1_D773-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SUS-D7441Kwhzc1_D773-11" value="Seat Selection" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/home_page.svg;" vertex="1" parent="1">
+          <mxGeometry x="570" y="280" width="50" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="SUS-D7441Kwhzc1_D773-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="SUS-D7441Kwhzc1_D773-12" target="SUS-D7441Kwhzc1_D773-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SUS-D7441Kwhzc1_D773-12" value="Pay Page" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/home_page.svg;" vertex="1" parent="1">
+          <mxGeometry x="570" y="430" width="50" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="SUS-D7441Kwhzc1_D773-40" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="219" y="432" as="sourcePoint" />
+            <mxPoint x="299" y="432" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="239" y="432" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SUS-D7441Kwhzc1_D773-48" value="MovieDB" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/databases.svg;" vertex="1" parent="1">
+          <mxGeometry x="362" y="127.46" width="83" height="81.34" as="geometry" />
+        </mxCell>
+        <mxCell id="SUS-D7441Kwhzc1_D773-49" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="330" y="278.8" as="sourcePoint" />
+            <mxPoint x="370" y="208.8" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SUS-D7441Kwhzc1_D773-51" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="470" y="280" as="sourcePoint" />
+            <mxPoint x="440" y="200" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="460" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SUS-D7441Kwhzc1_D773-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="SUS-D7441Kwhzc1_D773-52" target="SUS-D7441Kwhzc1_D773-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SUS-D7441Kwhzc1_D773-52" value="SeatDB" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/databases.svg;" vertex="1" parent="1">
+          <mxGeometry x="565" y="150" width="60" height="58.8" as="geometry" />
+        </mxCell>
+        <mxCell id="SUS-D7441Kwhzc1_D773-57" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="250" y="525" as="sourcePoint" />
+            <mxPoint x="210" y="525" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SUS-D7441Kwhzc1_D773-69" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="324" y="578" as="sourcePoint" />
+            <mxPoint x="323.5" y="446" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SUS-D7441Kwhzc1_D773-70" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="324" y="577" as="sourcePoint" />
+            <mxPoint x="686" y="575" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SUS-D7441Kwhzc1_D773-71" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="686" y="576" as="sourcePoint" />
+            <mxPoint x="686" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SUS-D7441Kwhzc1_D773-73" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" target="SUS-D7441Kwhzc1_D773-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="686" y="302" as="sourcePoint" />
+            <mxPoint x="625" y="302" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SUS-D7441Kwhzc1_D773-74" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="297" y="409" as="sourcePoint" />
+            <mxPoint x="207" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SUS-D7441Kwhzc1_D773-75" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="SUS-D7441Kwhzc1_D773-7" target="SUS-D7441Kwhzc1_D773-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="474" y="456" as="sourcePoint" />
+            <mxPoint x="384" y="367" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SUS-D7441Kwhzc1_D773-76" value="&lt;b&gt;User Accounts&lt;/b&gt;&lt;div&gt;&lt;b&gt;Payment History&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Reward Points&lt;/b&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="35" y="42" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SUS-D7441Kwhzc1_D773-77" value="&lt;b&gt;Theater Location,&lt;/b&gt;&lt;div&gt;&lt;b&gt;Theater type&lt;/b&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="102" y="480" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SUS-D7441Kwhzc1_D773-78" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="359" y="302" as="sourcePoint" />
+            <mxPoint x="332" y="302" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SUS-D7441Kwhzc1_D773-79" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="SUS-D7441Kwhzc1_D773-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="494" y="301" as="sourcePoint" />
+            <mxPoint x="570" y="299" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SUS-D7441Kwhzc1_D773-80" value="Seat" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="SUS-D7441Kwhzc1_D773-79">
+          <mxGeometry x="-0.1759" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SUS-D7441Kwhzc1_D773-82" value="&lt;b&gt;Available Seats,&lt;/b&gt;&lt;div&gt;&lt;b&gt;Seat Types&lt;/b&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="565" y="127" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SUS-D7441Kwhzc1_D773-83" value="&lt;b&gt;List of Movies,&lt;/b&gt;&lt;div&gt;&lt;b&gt;Theater locations&lt;/b&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="373.5" y="97.46000000000001" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
